@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <h2 align="center"> SLIDE </h2>
+   <div id="main-div" style="display:flex; flex-direction: row; justify-content: space-around; margin-top: 100px;">
+       <!-- SLIDE UP -->
+       <div id="div-1" style="width: 200px;">
+         <div id="div1-1" style="background-color: rgb(93, 10, 93); color: aliceblue; padding: 10px;"> ClICK ME!!</div>
+         <div id="panel-1" style="background-color: purple; color: aliceblue; padding: 10px; height: 100px;">Hello </div>
+       </div>
+   
+       <!-- SLIDE DOWN -->
+       <div id="div-2" style="width: 200px;">
+         <div id="div2-1" style="background-color: rgb(93, 10, 93); color: aliceblue; padding: 10px;"> ClICK ME!!</div>
+         <div id="panel-2" style="display: none; background-color: purple; color: aliceblue; padding: 10px; height: 100px; ">Hello </div>
+       </div>
+   
+       <!-- SLIDE TOGGLE -->
+       <div id="div-3" style="width: 200px;">
+         <div id="div3-1" style="background-color: rgb(93, 10, 93); color: aliceblue; padding: 10px;"> ClICK ME!!</div>
+         <div id="panel-3" style="background-color: purple; color: aliceblue; padding: 10px; height: 100px; ">Hello </div>
+       </div>
+   </div>
+   <script>
+      $(document).ready(function(){
+          $('#div1-1').click(function(){
+              $('#panel-1').slideUp();
+          }) 
+
+          $('#div2-1').click(function(){
+              $('#panel-2').slideDown();
+          })
+
+          $('#div3-1').click(function(){
+              $('#panel-3').slideToggle();
+          })
+      });
+   </script>
+</body>
+</html>

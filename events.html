@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+          $('document').ready(function(){
+               $('div').mouseenter(function(){
+                    alert("This is a Box");
+               });
+               $('div').mouseleave(function(){
+                    alert("this is a blue box");
+               });
+
+          });
+
+    </script>
+</head>
+<body>
+    <div style="width: 100px; height: 100px; background-color:blue">
+    </div>
+</body>
+</html>
